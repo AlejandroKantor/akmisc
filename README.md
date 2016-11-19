@@ -2,7 +2,7 @@
 ## akmisc
 
 
-Collection of miscellaneous functions for data manipulation written by Alejandro Kantor. Most functions use data.table. *Currently in development*.
+Collection of miscellaneous functions for data manipulation written by Alejandro Kantor. Most functions use data.table. *Currently under development*.
 
 ### Instalation
 
