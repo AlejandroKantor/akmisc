@@ -12,4 +12,3 @@ capitalizeFirstLetter <- function (v_s_string) {
                        substring(v_s_string, 2))
   return(v_s_string)
 }
-capitalizeFirstLetter("a")
