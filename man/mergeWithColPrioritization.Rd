@@ -7,9 +7,9 @@
 mergeWithColPrioritization(dt_prior, dt_other, v_s_keys)
 }
 \arguments{
-\item{dt_prior}{data.table for which has prioritized columns.}
+\item{dt_prior}{data.table for which has prioritized columns.\code{v_s_keys} must be columns in \code{dt_prior}.}
 
-\item{dt_other}{data.table wich we want to merge.}
+\item{dt_other}{data.table wich we want to merge. \code{v_s_keys} must be columns in \code{dt_other}.}
 
 \item{v_s_keys}{character vector of column names to merge by.}
 }
