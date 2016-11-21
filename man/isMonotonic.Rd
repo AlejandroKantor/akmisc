@@ -7,7 +7,7 @@
 isMonotonic(v_n_values, s_direction = "either")
 }
 \arguments{
-\item{v_n_values}{numeric vector.}
+\item{v_n_values}{numeric vector. Length of \code{v_n_values} must be at least 1.}
 
 \item{s_direction}{a string of the monotonic direction we are interested. Must be 'decreasing' 'increasing' or 'either'.}
 }
