@@ -25,7 +25,7 @@ Frequency table of the number of times of individual value occurs
 library(data.table)
 dt_data <- data.table( var1 = c(1,1,2,2,3,3,3,3),
                        var2 = c(6,6,6,7,7,7,7,7))
-freqTable(dt_data, "var1", b_total_row = T)
-freqTable(dt_data, c("var1","var2"), b_include_perc = T)
+freqTable(dt_data, "var1", b_total_row = TRUE)
+freqTable(dt_data, c("var1","var2"), b_include_perc = TRUE)
 }
 
