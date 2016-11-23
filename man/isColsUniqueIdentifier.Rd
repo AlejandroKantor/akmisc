@@ -18,6 +18,7 @@ A boolean of whether values in v_s_keys allow for unique idenfication of rows in
 Indicates if given fields allow for unique identification of rows i.e. if they are keys of the data.table.
 }
 \examples{
+library(data.table)
 dt_data <- data.table(var1 = c(1,1,2,2) , var2 = c("a", "b" , "a","b") )
 isColsUniqueIdentifier(dt_data, v_s_cols = "var1")
 isColsUniqueIdentifier(dt_data, v_s_cols = c("var1", "var2"))
