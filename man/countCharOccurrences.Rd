@@ -22,6 +22,6 @@ Counts the number of times a single characte occurs in each string of a characte
 \examples{
 countCharOccurrences("a", c("a other a", "zero"))
 countCharOccurrences("a", c("A sentence."))
-countCharOccurrences("a", c("A sentence."), b_ignore_case = T)
+countCharOccurrences("a", c("A sentence."), b_ignore_case = TRUE)
 }
 
