@@ -30,6 +30,7 @@ Construction function for CategorizationIntervals class used in \code{\link{cate
 Intervals are not allowed to overlap. CategorizationIntervals class inherits from data.table. This object type is used in \code{\link{categorizeByIntervals}}.
 }
 \examples{
+library(data.table)
 ci_intervals <- CategorizationIntervals(value = c(1,2,3),
                                         min = c(-Inf, 0, 0),
                                         max = c(0 , 0, Inf),

@@ -10,7 +10,7 @@
 #' @return a CategorizationIntervals object.
 #' @seealso \code{\link{categorizeByIntervals}}
 #' @examples
-#'
+#' library(data.table)
 #' ci_intervals <- CategorizationIntervals(value = c(1,2,3),
 #'                                         min = c(-Inf, 0, 0),
 #'                                         max = c(0 , 0, Inf),
