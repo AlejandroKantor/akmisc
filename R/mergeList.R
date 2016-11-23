@@ -12,7 +12,7 @@
 #' l_len_2 <- list(dt_1, dt_2)
 #' mergeList(l_len_2, v_s_keys= "let")
 #'
-#' mergeList(l_len_2, v_s_keys= "let", all=F )
+#' mergeList(l_len_2, v_s_keys= "let", all=FALSE )
 mergeList <- function(l_dt_data, v_s_keys, all=TRUE){
   dt_merged <- Reduce(function(dt_left, dt_right) merge(dt_left,
                                            dt_right,

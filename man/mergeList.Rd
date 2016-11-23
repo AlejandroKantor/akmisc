@@ -26,7 +26,7 @@ dt_2 <- data.table(let= letters[2:4], num = 1:3)
 l_len_2 <- list(dt_1, dt_2)
 mergeList(l_len_2, v_s_keys= "let")
 
-mergeList(l_len_2, v_s_keys= "let", all=F )
+mergeList(l_len_2, v_s_keys= "let", all=FALSE )
 }
 \seealso{
 \code{\link{merge.data.table}}
