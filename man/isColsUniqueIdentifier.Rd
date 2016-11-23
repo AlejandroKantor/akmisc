@@ -15,7 +15,7 @@ isColsUniqueIdentifier(dt_data, v_s_cols = NULL)
 A boolean of whether values in v_s_keys allow for unique idenfication of rows in dt_data.
 }
 \description{
-Indicates if given fields allow for unique identification of rows i.e. if they are keys of the data.table.
+Indicates if given fields allow for unique identification of rows i.e. if they can be teated as keys of the data.table.
 }
 \examples{
 library(data.table)

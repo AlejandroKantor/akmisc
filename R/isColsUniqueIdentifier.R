@@ -1,6 +1,6 @@
 #' Indicates if given fields are unique identifiers of a data.table
 #'
-#' @description Indicates if given fields allow for unique identification of rows i.e. if they are keys of the data.table.
+#' @description Indicates if given fields allow for unique identification of rows i.e. if they can be teated as keys of the data.table.
 #' @param dt_data a data.table.
 #' @param v_s_cols a character vector of column names in dt_data which we expect allow for unique idenfication.
 #' @return A boolean of whether values in v_s_keys allow for unique idenfication of rows in dt_data.
