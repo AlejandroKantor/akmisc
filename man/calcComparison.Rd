@@ -7,11 +7,11 @@
 calcComparison(v_n_1, v_n_2, s_comp)
 }
 \arguments{
-\item{v_n_1}{a numeric vector.}
+\item{v_n_1}{a numeric vector. Length must be the same as the length of \code{v_n_2} or length 1.}
 
-\item{v_n_2}{a numeric vector.}
+\item{v_n_2}{a numeric vector. Length must be the same as the length of \code{v_n_1} or length 1.}
 
-\item{s_comp}{type of comparison must be one of the following \code{c("==","!=", "<=", ">=", "<", ">")}.}
+\item{s_comp}{type of comparison must be one of the following \code{"==","!=", "<=", ">=", "<" ,">"}.}
 }
 \value{
 a logical vector of the comparison of v_n_1 and v_n_2.

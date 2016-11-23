@@ -1,8 +1,8 @@
 #' Compares two numeric vectors by passing comparison in a string
 #'
-#' @param v_n_1 a numeric vector.
-#' @param v_n_2 a numeric vector.
-#' @param s_comp type of comparison must be one of the following \code{c("==","!=", "<=", ">=", "<", ">")}.
+#' @param v_n_1 a numeric vector. Length must be the same as the length of \code{v_n_2} or length 1.
+#' @param v_n_2 a numeric vector. Length must be the same as the length of \code{v_n_1} or length 1.
+#' @param s_comp type of comparison must be one of the following \code{"==","!=", "<=", ">=", "<" ,">"}.
 #' @return a logical vector of the comparison of v_n_1 and v_n_2.
 #'
 #' @examples
