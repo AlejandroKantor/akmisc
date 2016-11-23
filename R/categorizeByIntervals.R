@@ -1,10 +1,10 @@
 #' Categorize by intervals
 #' @description Categorizes numeric values allowing for different types of intervals.
 #' @param v_n_values a numeric vector. Must have length of at least 1.
-#' @param ci_intervals a CategorizationIntervals object. See \code{\ink{CategorizationIntervals}}.
+#' @param ci_intervals a CategorizationIntervals object. See \code{\link{CategorizationIntervals}}.
 #' @details Flexibles intervals are allowed in ci_intervals for example '(-Inf,0), [0,0], (0,Inf)' is valid.
 #' @return a vector with the same length as v_n_values with the same type as ci_intervals[['value']].
-#' @seealso \code{\ink{CategorizationIntervals}}
+#' @seealso \code{\link{CategorizationIntervals}}
 #' @examples
 #' ci_intervals <- CategorizationIntervals(value = c(-1,0,1),
 #'                                         min = c(-Inf, 0, 0),

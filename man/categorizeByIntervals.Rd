@@ -9,7 +9,7 @@ categorizeByIntervals(v_n_values, ci_intervals)
 \arguments{
 \item{v_n_values}{a numeric vector. Must have length of at least 1.}
 
-\item{ci_intervals}{a CategorizationIntervals object. See \code{\ink{CategorizationIntervals}}.}
+\item{ci_intervals}{a CategorizationIntervals object. See \code{\link{CategorizationIntervals}}.}
 }
 \value{
 a vector with the same length as v_n_values with the same type as ci_intervals[['value']].
@@ -38,6 +38,6 @@ v_n_values <- -3:3
 categorizeByIntervals(v_n_values)
 }
 \seealso{
-\code{\ink{CategorizationIntervals}}
+\code{\link{CategorizationIntervals}}
 }
 
