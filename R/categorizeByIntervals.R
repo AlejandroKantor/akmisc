@@ -12,7 +12,7 @@
 #'                                         close_left = c(0,1,0),
 #'                                         close_right = c(0,1,0) )
 #' v_n_values <- -3:3
-#' categorizeByIntervals(v_n_values)
+#' categorizeByIntervals(v_n_values, ci_intervals)
 #'
 #' ci_intervals <- CategorizationIntervals(value = c("Neg","Zero","Pos"),
 #'                                         min = c(-Inf, 0, 0),
@@ -20,7 +20,7 @@
 #'                                         close_left = c(0,1,0),
 #'                                         close_right = c(0,1,0) )
 #' v_n_values <- -3:3
-#' categorizeByIntervals(v_n_values)
+#' categorizeByIntervals(v_n_values, ci_intervals)
 #'
 categorizeByIntervals <- function( v_n_values, ci_intervals){
 
