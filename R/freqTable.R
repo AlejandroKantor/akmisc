@@ -6,6 +6,7 @@
 #' @param b_include_perc default FALSE, whether we include a column with percentages.
 #' @return A data.table with the number of times an individual value occurs
 #' @examples
+#' library(data.table)
 #' dt_data <- data.table( var1 = c(1,1,2,2,3,3,3,3),
 #'                        var2 = c(6,6,6,7,7,7,7,7))
 #' freqTable(dt_data, "var1", b_total_row = T)
