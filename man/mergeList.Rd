@@ -20,6 +20,7 @@ a data.table which is the merger of \code{l_dt_data}. \code{v_s_keys} are set as
 Merge a list of data.table
 }
 \examples{
+library(data.table)
 dt_1 <- data.table(let = letters[1:3], num = 1:3)
 dt_2 <- data.table(let= letters[2:4], num = 1:3)
 l_len_2 <- list(dt_1, dt_2)

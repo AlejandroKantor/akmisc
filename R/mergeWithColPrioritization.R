@@ -7,6 +7,7 @@
 #' @return data.table of prioritized merger of dt_prior and dt_other.
 #'
 #' @examples
+#' library(data.table)
 #' i_num <- 3
 #' dt_prior <- data.table( id = 1:i_num,
 #'                         var1 = letters[1:i_num],

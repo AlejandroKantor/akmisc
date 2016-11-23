@@ -20,6 +20,7 @@ data.table of prioritized merger of dt_prior and dt_other.
 Merger (outer join) of two data.tables with repeated columns where we want to prioritize the values of one data.table.
 }
 \examples{
+library(data.table)
 i_num <- 3
 dt_prior <- data.table( id = 1:i_num,
                         var1 = letters[1:i_num],
