@@ -68,6 +68,7 @@ addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
 #' @return a CategorizationIntervals object.
 #' @seealso \code{\link{CategorizationIntervals}}
 #' @examples
+#' library(data.table)
 #' dt_intervals <- data.table(value = c(1,2,3),
 #'                            min = c(-Inf, 0, 0),
 #'                            max = c(0 , 0, Inf),

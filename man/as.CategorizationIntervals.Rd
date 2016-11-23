@@ -16,6 +16,7 @@ a CategorizationIntervals object.
 Converts a data.table to a as.CategorizationIntervals object
 }
 \examples{
+library(data.table)
 dt_intervals <- data.table(value = c(1,2,3),
                            min = c(-Inf, 0, 0),
                            max = c(0 , 0, Inf),
