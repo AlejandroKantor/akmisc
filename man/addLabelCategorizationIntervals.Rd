@@ -15,6 +15,6 @@ addLabelCategorizationIntervals(ci_intervals, i_digits = 3)
 Adds Label to a CategorizationIntervals object in memory.
 }
 \details{
-Modifies ci_intervals object in memory. Is used as part of construction function \code{\link{CategorizationIntervals}}.
+Modifies ci_intervals object in memory also returns object. Is used as part of construction function \code{\link{CategorizationIntervals}}.
 }
 
