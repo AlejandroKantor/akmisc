@@ -1,5 +1,5 @@
 
-#' Gives the proportion of cases which are the mode.
+#' Gives the proportion of cases which are the mode
 #'
 #' @param v_values a vector.
 #' @return A numeric of the proportion of cases which are the mode. If length(v_values) == 0 returns 0.

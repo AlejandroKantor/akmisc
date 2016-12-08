@@ -102,7 +102,7 @@ checkRepCategorizationIntervals <- function( min = NULL,
 
 }
 
-#' Adds Label to a CategorizationIntervals object.
+#' Adds Label to a CategorizationIntervals object
 #' @param ci_intervals a CategorizationIntervals object.
 #' @param i_digits number of digits in label. Default is 3.
 #' @return ci_intervals a CategorizationIntervals object with a new label column.

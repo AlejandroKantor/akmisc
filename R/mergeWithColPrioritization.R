@@ -1,5 +1,5 @@
 
-#' Merger of two data.tables with repeated columns with prioritization.
+#' Merger of two data.tables with repeated columns with prioritization
 #' @description Merger (outer join) of two data.tables with repeated columns where we want to prioritize the values of one data.table.
 #' @param dt_prior data.table for which has prioritized columns.\code{v_s_keys} must be columns in \code{dt_prior}.
 #' @param dt_other data.table wich we want to merge. \code{v_s_keys} must be columns in \code{dt_other}.

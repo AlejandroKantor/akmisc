@@ -2,7 +2,7 @@
 % Please edit documentation in R/mode.R
 \name{propCasesAreMode}
 \alias{propCasesAreMode}
-\title{Gives the proportion of cases which are the mode.}
+\title{Gives the proportion of cases which are the mode}
 \usage{
 propCasesAreMode(v_values)
 }
@@ -13,7 +13,7 @@ propCasesAreMode(v_values)
 A numeric of the proportion of cases which are the mode. If length(v_values) == 0 returns 0.
 }
 \description{
-Gives the proportion of cases which are the mode.
+Gives the proportion of cases which are the mode
 }
 \examples{
 propCasesAreMode(1:10)

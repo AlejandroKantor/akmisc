@@ -2,7 +2,7 @@
 % Please edit documentation in R/mergeWithColPrioritization.R
 \name{mergeWithColPrioritization}
 \alias{mergeWithColPrioritization}
-\title{Merger of two data.tables with repeated columns with prioritization.}
+\title{Merger of two data.tables with repeated columns with prioritization}
 \usage{
 mergeWithColPrioritization(dt_prior, dt_other, v_s_keys)
 }

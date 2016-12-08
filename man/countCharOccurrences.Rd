@@ -2,7 +2,7 @@
 % Please edit documentation in R/countCharOccurrences.R
 \name{countCharOccurrences}
 \alias{countCharOccurrences}
-\title{Counts the number of times a single characte occurs.}
+\title{Counts the number of times a single characte occurs}
 \usage{
 countCharOccurrences(char, v_s_string, b_ignore_case = FALSE)
 }

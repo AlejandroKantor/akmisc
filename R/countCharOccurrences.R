@@ -1,4 +1,4 @@
-#' Counts the number of times a single characte occurs.
+#' Counts the number of times a single characte occurs
 #'
 #' @description Counts the number of times a single characte occurs in each string of a character vector.
 #' @param char a single character cannot be a regular expression.
