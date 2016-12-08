@@ -9,9 +9,9 @@ countCharOccurrences(char, v_s_string, b_ignore_case = FALSE)
 \arguments{
 \item{char}{a single character cannot be a regular expression.}
 
-\item{v_s_string}{a character vector}
+\item{v_s_string}{a character vector.}
 
-\item{b_ignore_case}{a boolean default FALSE of we want to ignore the case}
+\item{b_ignore_case}{a boolean default FALSE. If TRUE case is ignored.}
 }
 \value{
 a integer vector of the number of times the character occurs in each string in v_s_string.

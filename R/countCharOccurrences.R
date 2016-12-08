@@ -2,8 +2,8 @@
 #'
 #' @description Counts the number of times a single characte occurs in each string of a character vector.
 #' @param char a single character cannot be a regular expression.
-#' @param v_s_string a character vector
-#' @param b_ignore_case a boolean default FALSE of we want to ignore the case
+#' @param v_s_string a character vector.
+#' @param b_ignore_case a boolean default FALSE. If TRUE case is ignored.
 #' @return a integer vector of the number of times the character occurs in each string in v_s_string.
 #'
 #' @examples
