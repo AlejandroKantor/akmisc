@@ -1,7 +1,7 @@
 #' Construction function for CategorizationIntervals class
 #' @description Construction function for CategorizationIntervals class used in \code{\link{categorizeByIntervals}}.
 #' @param value a vector.
-#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")". Default NULL.
+#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")" and have two numeric values seperated by ",". Default NULL.
 #' @param min a numeric vector. Default NULL.
 #' @param max a numeric vector. Default NULL.
 #' @param close_left a integer vector with only values 0 or 1 or a logical vector. Default NULL.
@@ -45,7 +45,7 @@ CategorizationIntervals <- function(value,
 #' Extract Categories from Interals
 #' @description Parses a character vector of intervals to a data.table with numeric values
 #' @param value a vector.
-#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
+#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")" and have two numeric values seperated by ",".
 #' @return data.table with columns value, min, max, close_left and close_right.
 #' @seealso \code{\link{categorizeByIntervals}}, \code{\link{CategorizationIntervals}}
 #' @examples

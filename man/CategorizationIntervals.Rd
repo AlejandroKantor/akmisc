@@ -10,7 +10,7 @@ CategorizationIntervals(value, v_s_intervals = NULL, min = NULL,
 \arguments{
 \item{value}{a vector.}
 
-\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")". Default NULL.}
+\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")" and have two numeric values seperated by ",". Default NULL.}
 
 \item{min}{a numeric vector. Default NULL.}
 

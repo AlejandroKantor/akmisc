@@ -9,7 +9,7 @@ extractCategoriesFromIntervals(value, v_s_intervals)
 \arguments{
 \item{value}{a vector.}
 
-\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
+\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")" and have two numeric values seperated by ",".}
 }
 \value{
 data.table with columns value, min, max, close_left and close_right.
