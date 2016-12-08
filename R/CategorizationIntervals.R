@@ -1,13 +1,13 @@
 #' Construction function for CategorizationIntervals class
 #' @description Construction function for CategorizationIntervals class used in \code{\link{categorizeByIntervals}}.
 #' @param value a vector.
-#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
-#' @param min a numeric vector.
-#' @param max a numeric vector.
-#' @param close_left a integer vector with only values 0 or 1 or a logical vector.
-#' @param close_right a integer vector with only values 0 or 1 or a logical vector.
+#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")". Default NULL.
+#' @param min a numeric vector. Default NULL.
+#' @param max a numeric vector. Default NULL.
+#' @param close_left a integer vector with only values 0 or 1 or a logical vector. Default NULL.
+#' @param close_right a integer vector with only values 0 or 1 or a logical vector. Default NULL.
 #' @param i_digits_label number of digits in label created as part of the object. Default is 3.
-#' @details Intervals are not allowed to overlap. CategorizationIntervals class inherits from data.table. This object type is used in \code{\link{categorizeByIntervals}}.
+#' @details Intervals are not allowed to overlap. Either v_s_intervals is provided or min, max, close_left and close_right must be provided.  CategorizationIntervals class inherits from data.table. This object type is used in \code{\link{categorizeByIntervals}}.
 #' @return a CategorizationIntervals object.
 #' @seealso \code{\link{categorizeByIntervals}}
 #' @examples

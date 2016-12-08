@@ -10,15 +10,15 @@ CategorizationIntervals(value, v_s_intervals = NULL, min = NULL,
 \arguments{
 \item{value}{a vector.}
 
-\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
+\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")". Default NULL.}
 
-\item{min}{a numeric vector.}
+\item{min}{a numeric vector. Default NULL.}
 
-\item{max}{a numeric vector.}
+\item{max}{a numeric vector. Default NULL.}
 
-\item{close_left}{a integer vector with only values 0 or 1 or a logical vector.}
+\item{close_left}{a integer vector with only values 0 or 1 or a logical vector. Default NULL.}
 
-\item{close_right}{a integer vector with only values 0 or 1 or a logical vector.}
+\item{close_right}{a integer vector with only values 0 or 1 or a logical vector. Default NULL.}
 
 \item{i_digits_label}{number of digits in label created as part of the object. Default is 3.}
 }
@@ -29,7 +29,7 @@ a CategorizationIntervals object.
 Construction function for CategorizationIntervals class used in \code{\link{categorizeByIntervals}}.
 }
 \details{
-Intervals are not allowed to overlap. CategorizationIntervals class inherits from data.table. This object type is used in \code{\link{categorizeByIntervals}}.
+Intervals are not allowed to overlap. Either v_s_intervals is provided or min, max, close_left and close_right must be provided.  CategorizationIntervals class inherits from data.table. This object type is used in \code{\link{categorizeByIntervals}}.
 }
 \examples{
 library(data.table)
