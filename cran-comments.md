@@ -9,6 +9,14 @@ This is a resubmission. In this version I have:
 
 * Import methods
   added importFrom("methods", "as") NAMESPACE file and 'methods' to DESCRIPTION file
+  
+Not addressed:
+
+* Undefined global functions or variables:
+  . as category close_left close_right freq id intervals label
+  label_end label_start perc present_in_prior prop value values  
+This is because undefined variables are defined inside data.table object which is OK, but is considered undefined by IDE.
+
 ## Test environments
 * local OS X install, 3.2.4
 * win-builder 3.3.2 and under development
