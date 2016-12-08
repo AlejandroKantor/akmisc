@@ -10,5 +10,5 @@ License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
     data.table
-	methods
+    methods
 Suggests: testthat
