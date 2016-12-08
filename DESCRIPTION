@@ -6,7 +6,7 @@ Date: 2016-11-11
 Author: Alejandro Kantor
 Maintainer: Alejandro Kantor <akantorb@gmail.com>
 Description: Collection of miscellaneous functions for data manipulation written by Alejandro Kantor. Most functions use data.table.
-License: MIT License
+License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
     data.table
