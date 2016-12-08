@@ -9,6 +9,6 @@ Description: Collection of miscellaneous functions for data manipulation written
 License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
-    data.table
+    data.table,
     methods
 Suggests: testthat
