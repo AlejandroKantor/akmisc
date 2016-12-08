@@ -39,6 +39,13 @@ test_that("differentTypesOfValuesLabels", {
 
 })
 
+test_that("differentTypesOfValuesLabelsDifferentSpaces", {
+  ci_intervals <- CategorizationIntervals(value = c(1,2,3),
+                                          v_s_intervals = c("( -Inf, 0)","[0,0.1111)","[  0.1111, Inf)"))
+  v_n_values <- c(-2,0,0, 0.1, 0.112,100)
+  v_expected <- c(1 ,2 ,2 , 2, 3,3)
+  expect_equal(categorizeByIntervals(v_n_values, ci_intervals),v_expected)
+})
 
 test_that("wierdIntervals", {
   ci_intervals <- CategorizationIntervals(value = c(-99,1,2,-99),
