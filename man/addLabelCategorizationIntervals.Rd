@@ -2,7 +2,7 @@
 % Please edit documentation in R/CategorizationIntervals.R
 \name{addLabelCategorizationIntervals}
 \alias{addLabelCategorizationIntervals}
-\title{Adds Label to a CategorizationIntervals object in memory.}
+\title{Adds Label to a CategorizationIntervals object.}
 \usage{
 addLabelCategorizationIntervals(ci_intervals, i_digits = 3)
 }
@@ -12,7 +12,7 @@ addLabelCategorizationIntervals(ci_intervals, i_digits = 3)
 \item{i_digits}{number of digits in label. Default is 3.}
 }
 \description{
-Adds Label to a CategorizationIntervals object in memory.
+Adds Label to a CategorizationIntervals object.
 }
 \details{
 Modifies ci_intervals object in memory also returns object. Is used as part of construction function \code{\link{CategorizationIntervals}}.
