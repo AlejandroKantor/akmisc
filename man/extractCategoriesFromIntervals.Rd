@@ -4,12 +4,12 @@
 \alias{extractCategoriesFromIntervals}
 \title{Extract Categories from Interals}
 \usage{
-extractCategoriesFromIntervals(value, s_intervals)
+extractCategoriesFromIntervals(value, v_s_intervals)
 }
 \arguments{
 \item{value}{a vector.}
 
-\item{s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
+\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
 }
 \value{
 data.table with columns value, min, max, close_left and close_right.
@@ -19,7 +19,7 @@ Parses a character vector of intervals to a data.table with numeric values
 }
 \examples{
 dt_intervals <- extractCategoriesFromIntervals(value = c(1,2,3),
-                                        s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+                                        v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
 print(dt_intervals)
 }
 \seealso{

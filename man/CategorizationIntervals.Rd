@@ -4,13 +4,13 @@
 \alias{CategorizationIntervals}
 \title{Construction function for CategorizationIntervals class}
 \usage{
-CategorizationIntervals(value, s_intervals = NULL, min = NULL, max = NULL,
-  close_left = NULL, close_right = NULL, i_digits_label = 3)
+CategorizationIntervals(value, v_s_intervals = NULL, min = NULL,
+  max = NULL, close_left = NULL, close_right = NULL, i_digits_label = 3)
 }
 \arguments{
 \item{value}{a vector.}
 
-\item{s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
+\item{v_s_intervals}{a character vector. Each element must start with "[" or "(" and end with "]" or ")".}
 
 \item{min}{a numeric vector.}
 
@@ -40,7 +40,7 @@ ci_intervals <- CategorizationIntervals(value = c(1,2,3),
                                         close_right = c(0,1,0) )
 print(ci_intervals)
 ci_intervals <- CategorizationIntervals(value = c(1,2,3),
-                                        s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+                                        v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
 print(ci_intervals)
 }
 \seealso{

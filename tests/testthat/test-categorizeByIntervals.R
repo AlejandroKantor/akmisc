@@ -24,7 +24,7 @@ test_that("differentTypesOfValues", {
 
 test_that("differentTypesOfValuesLabels", {
   ci_intervals <- CategorizationIntervals(value = c(1,2,3),
-                                          s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+                                          v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
   v_n_values <- -3:3
   v_expected <- c(1,1,1,2,3,3,3)
   expect_equal(categorizeByIntervals(v_n_values, ci_intervals),v_expected)

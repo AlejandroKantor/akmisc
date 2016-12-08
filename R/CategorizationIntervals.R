@@ -1,7 +1,7 @@
 #' Construction function for CategorizationIntervals class
 #' @description Construction function for CategorizationIntervals class used in \code{\link{categorizeByIntervals}}.
 #' @param value a vector.
-#' @param s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
+#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
 #' @param min a numeric vector.
 #' @param max a numeric vector.
 #' @param close_left a integer vector with only values 0 or 1 or a logical vector.
@@ -19,18 +19,18 @@
 #'                                         close_right = c(0,1,0) )
 #' print(ci_intervals)
 #' ci_intervals <- CategorizationIntervals(value = c(1,2,3),
-#'                                         s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+#'                                         v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
 #' print(ci_intervals)
 CategorizationIntervals <- function(value,
-                                    s_intervals = NULL,
+                                    v_s_intervals = NULL,
                                     min = NULL,
                                     max = NULL,
                                     close_left = NULL,
                                     close_right = NULL,
                                     i_digits_label = 3){
 
-  if( !is.null(s_intervals)){
-    ci_intervals <- extractCategoriesFromIntervals(value, s_intervals)
+  if( !is.null(v_s_intervals)){
+    ci_intervals <- extractCategoriesFromIntervals(value, v_s_intervals)
   } else {
     # making sure each variable has the correct data type
     checkRepCategorizationIntervals( min, max, close_left, close_right)
@@ -45,15 +45,15 @@ CategorizationIntervals <- function(value,
 #' Extract Categories from Interals
 #' @description Parses a character vector of intervals to a data.table with numeric values
 #' @param value a vector.
-#' @param s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
+#' @param v_s_intervals a character vector. Each element must start with "[" or "(" and end with "]" or ")".
 #' @return data.table with columns value, min, max, close_left and close_right.
 #' @seealso \code{\link{categorizeByIntervals}}, \code{\link{CategorizationIntervals}}
 #' @examples
 #' dt_intervals <- extractCategoriesFromIntervals(value = c(1,2,3),
-#'                                         s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+#'                                         v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
 #' print(dt_intervals)
-extractCategoriesFromIntervals <- function(value, s_intervals){
-  dt_intervals <- data.table(value = value, intervals = s_intervals)
+extractCategoriesFromIntervals <- function(value, v_s_intervals){
+  dt_intervals <- data.table(value = value, intervals = v_s_intervals)
   dt_intervals[  , close_left := ifelse(grepl("^\\[" ,intervals), 1,
                                         ifelse(grepl("^\\(" ,intervals),0, NA_integer_)) ]
   dt_intervals[  , close_right := ifelse(grepl("\\]$" ,intervals), 1,
