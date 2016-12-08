@@ -1,3 +1,14 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Passed title to title case in particular
+  from:
+  ‘Miscellaneous functions for data manipulation’
+  to:
+  ‘Miscellaneous Functions for Data Manipulation’
+
+* Import methods
+  added importFrom("methods", "as") NAMESPACE file and 'methods' to DESCRIPTION file
 ## Test environments
 * local OS X install, 3.2.4
 * win-builder 3.3.2 and under development
