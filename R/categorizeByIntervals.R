@@ -14,6 +14,13 @@
 #' v_n_values <- -3:3
 #' categorizeByIntervals(v_n_values, ci_intervals)
 #'
+#'
+#' ci_intervals <- CategorizationIntervals(value = c(1,2,3),
+#'                                         v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+#' v_n_values <- -3:3
+#' categorizeByIntervals(v_n_values, ci_intervals)
+#'
+#'
 #' ci_intervals <- CategorizationIntervals(value = c("Neg","Zero","Pos"),
 #'                                         min = c(-Inf, 0, 0),
 #'                                         max = c(0 , 0, Inf),
