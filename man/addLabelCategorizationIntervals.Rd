@@ -11,10 +11,14 @@ addLabelCategorizationIntervals(ci_intervals, i_digits = 3)
 
 \item{i_digits}{number of digits in label. Default is 3.}
 }
+\value{
+ci_intervals a CategorizationIntervals object with a new label column.
+}
 \description{
 Adds Label to a CategorizationIntervals object.
 }
 \details{
 Modifies ci_intervals object in memory also returns object. Is used as part of construction function \code{\link{CategorizationIntervals}}.
 }
+\keyword{internal}
 
