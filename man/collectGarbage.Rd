@@ -2,7 +2,7 @@
 % Please edit documentation in R/collectGarbage.R
 \name{collectGarbage}
 \alias{collectGarbage}
-\title{Performs garbadge collections non verbosely}
+\title{Performs garbage collections non verbosely}
 \usage{
 collectGarbage()
 }
@@ -10,7 +10,7 @@ collectGarbage()
 taken from  \code{\link{gc}}: gc returns a matrix with rows "Ncells"
 }
 \description{
-Performs garbadge collections non verbosely
+Performs garbage collections non verbosely
 }
 \examples{
 collectGarbage()

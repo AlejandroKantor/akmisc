@@ -1,4 +1,4 @@
-#' Performs garbadge collections non verbosely
+#' Performs garbage collections non verbosely
 #'
 #' @return taken from  \code{\link{gc}}: gc returns a matrix with rows "Ncells"
 #' @seealso \code{\link{gc}}
