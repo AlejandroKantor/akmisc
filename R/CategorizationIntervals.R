@@ -122,7 +122,7 @@ addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
 
 }
 
-#' Converts a data.table to a as.CategorizationIntervals object
+#' Converts a data.table to a CategorizationIntervals object
 #' @param dt_intervals data.table must have columns value, min, max, close_left, close_right as defined in \code{\link{CategorizationIntervals}}.
 #' @return a CategorizationIntervals object.
 #' @seealso \code{\link{CategorizationIntervals}}
@@ -133,10 +133,10 @@ addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
 #'                            max = c(0 , 0, Inf),
 #'                            close_left = c(0,1,0),
 #'                            close_right = c(0,1,0) )
-#' ci_intervals <- as.CategorizationIntervals(dt_intervals)
+#' ci_intervals <- asCategorizationIntervals(dt_intervals)
 #' print(ci_intervals)
 
-as.CategorizationIntervals <- function(dt_intervals){
+asCategorizationIntervals <- function(dt_intervals){
   ci_intervals <- CategorizationIntervals(value = dt_intervals[ , value],
                                           min = dt_intervals[ ,  min],
                                           max = dt_intervals[ , max],
