@@ -33,7 +33,7 @@ freqTable <- function(dt_data,
   }
 
   if( b_include_perc == TRUE){
-    dt_agg[ , perc := freq/i_nrow * 100]
+    dt_agg[ , perc := freq/i_nrow * 100][]
   }
   return(dt_agg)
 }
