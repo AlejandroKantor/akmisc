@@ -117,6 +117,7 @@ addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
 
   ci_intervals[, label_start:=NULL]
   ci_intervals[, label_end:=NULL]
+  ci_intervals <- ci_intervals[] # done for correct printing
   return(ci_intervals)
 
 }
