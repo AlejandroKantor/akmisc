@@ -8,6 +8,9 @@
 #' propCasesAreMode(c("a","a","b","c","c","c"))
 #' propCasesAreMode(numeric())
 
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("prop"))
+
 propCasesAreMode <- function(v_values) {
   if(length(v_values) == 0) {
     n_max <- 0.0

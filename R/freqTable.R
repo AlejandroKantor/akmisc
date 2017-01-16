@@ -12,6 +12,9 @@
 #' freqTable(dt_data, "var1", b_total_row = TRUE)
 #' freqTable(dt_data, c("var1","var2"), b_include_perc = TRUE)
 
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c(".", "freq","perc"))
+
 freqTable <- function(dt_data,
                       v_s_vars,
                       b_total_row = FALSE ,

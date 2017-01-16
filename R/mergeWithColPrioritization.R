@@ -22,6 +22,8 @@
 #' mergeWithColPrioritization(dt_prior, dt_other,v_s_keys )
 #'
 
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("present_in_prior"))
 
 mergeWithColPrioritization <- function( dt_prior, dt_other, v_s_keys){
 

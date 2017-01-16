@@ -28,7 +28,10 @@
 #'                                         close_right = c(0,1,0) )
 #' v_n_values <- -3:3
 #' categorizeByIntervals(v_n_values, ci_intervals)
-#'
+
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("values","id","intervals","category"))
+
 categorizeByIntervals <- function( v_n_values, ci_intervals){
 
   i_n <- length(v_n_values)

@@ -109,6 +109,9 @@ checkRepCategorizationIntervals <- function( min = NULL,
 #' @details Modifies ci_intervals object in memory also returns object. Is used as part of construction function \code{\link{CategorizationIntervals}}.
 #' @keywords internal
 
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("label_start","close_left","label_end","close_right","label","value"))
+
 addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
   ci_intervals[ , label_start:=ifelse( close_left==0, "(", "[")]
   ci_intervals[ , label_end:=ifelse( close_right==0, ")", "]")]
@@ -135,6 +138,7 @@ addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
 #'                            close_right = c(0,1,0) )
 #' ci_intervals <- asCategorizationIntervals(dt_intervals)
 #' print(ci_intervals)
+#'
 
 asCategorizationIntervals <- function(dt_intervals){
   ci_intervals <- CategorizationIntervals(value = dt_intervals[ , value],
