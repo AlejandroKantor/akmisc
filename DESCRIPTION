@@ -9,6 +9,8 @@ Description: Collection of miscellaneous functions for data manipulation written
     by Alejandro Kantor. Most functions use data.table.
 License: MIT + file LICENSE
 LazyData: TRUE
-Imports: data.table
-Suggests: testthat
+Imports: 
+    data.table,
+Suggests: 
+    testthat,
 RoxygenNote: 5.0.1
