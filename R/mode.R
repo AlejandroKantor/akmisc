@@ -1,3 +1,5 @@
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("prop"))
 
 #' Gives the proportion of cases which are the mode
 #'
@@ -8,8 +10,6 @@
 #' propCasesAreMode(c("a","a","b","c","c","c"))
 #' propCasesAreMode(numeric())
 
-# Used to avoid incorrect notes of "no visible binding"
-utils::globalVariables(c("prop"))
 
 propCasesAreMode <- function(v_values) {
   if(length(v_values) == 0) {

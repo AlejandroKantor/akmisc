@@ -1,3 +1,6 @@
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("values","id","intervals","category"))
+
 #' Categorize by intervals
 #' @description Categorizes numeric values allowing for different types of intervals.
 #' @param v_n_values a numeric vector. Must have length of at least 1.
@@ -29,8 +32,6 @@
 #' v_n_values <- -3:3
 #' categorizeByIntervals(v_n_values, ci_intervals)
 
-# Used to avoid incorrect notes of "no visible binding"
-utils::globalVariables(c("values","id","intervals","category"))
 
 categorizeByIntervals <- function( v_n_values, ci_intervals){
 

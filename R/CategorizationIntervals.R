@@ -1,3 +1,6 @@
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("label_start","close_left","label_end","close_right","label","value"))
+
 #' Construction function for CategorizationIntervals class
 #' @description Construction function for CategorizationIntervals class used in \code{\link{categorizeByIntervals}}.
 #' @param value a vector.
@@ -109,8 +112,6 @@ checkRepCategorizationIntervals <- function( min = NULL,
 #' @details Modifies ci_intervals object in memory also returns object. Is used as part of construction function \code{\link{CategorizationIntervals}}.
 #' @keywords internal
 
-# Used to avoid incorrect notes of "no visible binding"
-utils::globalVariables(c("label_start","close_left","label_end","close_right","label","value"))
 
 addLabelCategorizationIntervals <- function(ci_intervals,i_digits = 3){
   ci_intervals[ , label_start:=ifelse( close_left==0, "(", "[")]

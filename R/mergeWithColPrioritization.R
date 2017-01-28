@@ -1,3 +1,5 @@
+# Used to avoid incorrect notes of "no visible binding"
+utils::globalVariables(c("present_in_prior"))
 
 #' Merger of two data.tables with repeated columns with prioritization
 #' @description Merger (outer join) of two data.tables with repeated columns where we want to prioritize the values of one data.table.
@@ -22,8 +24,6 @@
 #' mergeWithColPrioritization(dt_prior, dt_other,v_s_keys )
 #'
 
-# Used to avoid incorrect notes of "no visible binding"
-utils::globalVariables(c("present_in_prior"))
 
 mergeWithColPrioritization <- function( dt_prior, dt_other, v_s_keys){
 
