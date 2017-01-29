@@ -16,6 +16,7 @@ utils::globalVariables(c(".", "freq","perc"))
 #' freqTable(dt_data, "var1", b_total_row = TRUE)
 #' freqTable(dt_data, c("var1","var2"), b_include_perc = TRUE)
 #' freqTable(dt_data, c("var1","var2"), b_include_perc = TRUE, s_order_by = "descending" )
+#' freqTable(dt_data, c("var1","var2"), b_total_row = TRUE, b_include_perc = TRUE, s_order_by = "descending")
 
 
 freqTable <- function(dt_data,
