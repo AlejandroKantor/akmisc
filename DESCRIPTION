@@ -9,9 +9,12 @@ Description: Collection of miscellaneous functions for data manipulation written
     by Alejandro Kantor. Most functions use data.table.
 License: MIT + file LICENSE
 LazyData: TRUE
-Imports: 
+Imports:
     data.table,
     methods,
-Suggests: 
-    testthat,
+Suggests:
+    testthat,,
+    knitr,
+    rmarkdown
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr
