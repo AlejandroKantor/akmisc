@@ -1,0 +1,79 @@
+---
+title: "The akmisc Package"
+author: "Alejandro Kantor"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+## Frequency Table
+
+Although R has many tools for counts (notably the *table* function), *freqTable* provides additional functionality leveraging methods within *data.tables*.    
+
+```{r} 
+library(akmisc)
+library(data.table)
+# example data set
+set.seed(111)
+i_nrow <- 500
+dt_data <- data.table( var1 = rbinom( i_nrow, size = 2, prob = 0.1),
+                       var2 = rbinom( i_nrow, size = 1, prob = 0.5))
+freqTable(dt_data, "var1")
+freqTable(dt_data, "var1", b_total_row = TRUE)
+freqTable(dt_data, "var1", b_total_row = TRUE,b_include_perc = TRUE,s_order_by = "ascending")
+
+freqTable(dt_data, c("var1", "var2"), b_total_row = TRUE,b_include_perc = TRUE,s_order_by = "ascending")
+
+```
+
+## Discretization/categorization
+
+Discretization or categorization function in R tend to be wrappers for *cut* which does not handle a mix of cases where part of the intervals are closed to the left and others to the right. For example, we might want to categorize by negative numbers zero and positive numbers as follows.  $(-\infty, 0), [0,0], (0, \infty)$. *categorizeByIntervals* provides this functionality.
+
+```{r} 
+ci_intervals <- CategorizationIntervals(value = c(-1,0,1),
+                                        v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+v_n_values <- seq(from= -1, to = 1, by = 0.5 )
+v_n_values
+categorizeByIntervals(v_n_values, ci_intervals)
+
+ci_intervals <- CategorizationIntervals(value = c("Negative","Zero","Positive"),
+                                        v_s_intervals = c("(-Inf,0)","[0,0]","(0,Inf)"))
+
+categorizeByIntervals(v_n_values, ci_intervals)
+
+```
+
+## Merging when columns is shared by both datasets
+
+There are cases when merging two data sets which share columns is desired. *mergeWithColPrioritization* allows this letting you indicate which data set has a priority. See following example.
+
+```{R}
+i_num <- 3
+dt_prior <- data.table( id = 1:i_num,
+                        var1 = letters[1:i_num],
+                        var2 = 111)
+dt_other <- data.table( id = 1:(i_num+2),
+                        var1 = paste0(letters[10 + 1:(i_num+2)],letters[10 + 1:(i_num+2)]) ,
+                        var3 = -999)
+v_s_keys <- "id"
+# both dt_prior and dt_other have "var1"
+dt_prior
+dt_other
+# now we merge this indicating that values from dt_prior have priority
+mergeWithColPrioritization(dt_prior, dt_other,v_s_keys )
+# thus for observations with *id* c(1,2,3) we use values from dt_prior and for other rows we use dt_other
+```
+
+## Testing if fields allow for unique identification of rows
+
+*isColsUniqueIdentifier* indicates if given fields allow for unique identification of rows i.e. if they can be tested as keys of the data.table.
+
+```{r}
+dt_data <- data.table(var1 = c(1,1,2,2) , var2 = c("a", "b" , "a","b") )
+dt_data
+isColsUniqueIdentifier(dt_data, v_s_cols = "var1")
+isColsUniqueIdentifier(dt_data, v_s_cols = c("var1", "var2"))
+```
