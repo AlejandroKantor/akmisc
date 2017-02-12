@@ -2,7 +2,7 @@ Package: akmisc
 Type: Package
 Title: Miscellaneous Functions for Data Manipulation
 Version: 0.2.0
-Date: 2016-12-08
+Date: 2017-02-12
 Author: Alejandro Kantor
 Maintainer: Alejandro Kantor <akantorb@gmail.com>
 Description: Collection of miscellaneous functions for data manipulation written
