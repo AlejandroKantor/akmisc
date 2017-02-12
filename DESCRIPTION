@@ -13,7 +13,7 @@ Imports:
     data.table,
     methods,
 Suggests:
-    testthat,,
+    testthat,
     knitr,
     rmarkdown
 RoxygenNote: 5.0.1
