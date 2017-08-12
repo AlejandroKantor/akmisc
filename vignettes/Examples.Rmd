@@ -30,7 +30,7 @@ freqTable(dt_data, c("var1", "var2"), b_total_row = TRUE,b_include_perc = TRUE,s
 
 ## Discretization/categorization
 
-Discretization or categorization function in R tend to be wrappers for *cut* which does not handle a mix of cases where part of the intervals are closed to the left and others to the right. For example, we might want to categorize by negative numbers zero and positive numbers as follows.  $(-\infty, 0), [0,0], (0, \infty)$. *categorizeByIntervals* provides this functionality.
+Discretization or categorization function in R tend to be wrappers for *cut* which does not handle a mix of cases where part of the intervals are closed to the left and others to the right. For example, we might want to categorize by negative numbers, zero, and positive numbers as follows.  $(-\infty, 0), [0,0], (0, \infty)$. *categorizeByIntervals* provides this functionality.
 
 ```{r} 
 ci_intervals <- CategorizationIntervals(value = c(-1,0,1),
