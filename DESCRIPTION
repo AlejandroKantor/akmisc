@@ -5,8 +5,7 @@ Version: 0.2.0
 Date: 2017-08-12
 Author: Alejandro Kantor
 Maintainer: Alejandro Kantor <akantorb@gmail.com>
-Description: Function for data manipulation including frequency counts (with several options), categorization by arbitrary intervals, 
-search for repeated rows by keys, function to optionally retreave or create an object, among others. 
+Description: Function for data manipulation including frequency counts (with several options), categorization by arbitrary intervals,  search for repeated rows by keys, function to optionally retreave or create an object, among others. 
 License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
