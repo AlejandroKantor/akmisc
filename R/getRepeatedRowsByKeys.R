@@ -8,6 +8,7 @@
 #' a new column \code{rep_count_} is added  which indicates the number of times the key combination is repeated in the data set.
 #' If there is no repeated cases function returns \code{NULL}.
 #' @examples
+#' library(data.table)
 #' dt_data <- data.table( unique_identifier = c(1,2,3,3,3,4,4,5), value = rnorm(8))
 #'
 #' getRepeatedRowsByKeys(dt_data, "unique_identifier")
