@@ -11,10 +11,12 @@
 #' If s_file does not exist or \code{b_always_make_obj} object will be created and saved to \code{s_file}.
 #' @examples
 #' # create a random vector, assign it to v_n_random and save it to file.rds
-#' v_n_random <- readOrMakeObj("file.rds", rnorm, n = 1000000, b_always_make_obj = TRUE, b_message_time = TRUE )
+#' v_n_random <- readOrMakeObj("file.rds", rnorm, n = 1000000,
+#'                              b_always_make_obj = TRUE, b_message_time = TRUE )
 #'
 #' # retreave vector changing a parameter
-#' v_n_random_2 <- readOrMakeObj("file.rds", rnorm, n = 100, b_always_make_obj = FALSE, b_message_time = TRUE )
+#' v_n_random_2 <- readOrMakeObj("file.rds", rnorm, n = 100,
+#'                                b_always_make_obj = FALSE, b_message_time = TRUE )
 #' length(v_n_random_2)
 #' # 1000000 not 100
 
